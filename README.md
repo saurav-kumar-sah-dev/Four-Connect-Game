@@ -17,16 +17,16 @@ No build tools. No dependencies. Just pure HTML + CSS + JavaScript.
 ## 📸 Screenshots  
 
 ### 🎮 Game Board - Dark Theme
-![Game Board Dark](https://drive.google.com/file/d/1FhEjcjcXm3OhxMBeKGe1R3Jl-3vw6Cr6/view?usp=sharing)
+![Game Board Dark](https://drive.google.com/uc?export=view&id=1FhEjcjcXm3OhxMBeKGe1R3Jl-3vw6Cr6)
 
 ### ⚙️ Game Settings Panel
-![Settings Panel](https://drive.google.com/file/d/1LREgXmwias9qVhCb556wOqJYcP8cV30N/view?usp=sharing)
+![Settings Panel](https://drive.google.com/uc?export=view&id=1LREgXmwias9qVhCb556wOqJYcP8cV30N)
 
 ### ☀️ Game Board - Light Theme
-![Game Play Board ](https://drive.google.com/file/d/1HS63AU-WjPetp72aNTpmJMLcawf05w7M/view?usp=sharing)
+![Game Play Board](https://drive.google.com/uc?export=view&id=1HS63AU-WjPetp72aNTpmJMLcawf05w7M)
 
 ### 📱 Mobile Responsive View
-![Game Board Light](https://drive.google.com/file/d/1hmQNhpyK-INXlwzVLPHlQEvNATIdMxoW/view?usp=sharing)
+![Game Board Light](https://drive.google.com/uc?export=view&id=1hmQNhpyK-INXlwzVLPHlQEvNATIdMxoW)
 
 ---
 
