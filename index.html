@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Four Connect</title>
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#" class="brand" aria-label="Four Connect Home">
+        <span class="disc-icon red">🔴</span>
+        <span class="disc-icon yellow">🟡</span>
+        <span class="brand-text">Four Connect</span>
+      </a>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn tertiary" type="button">🌙 Dark</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="game-container container" role="main">
+    <!-- Hero / Header Section -->
+    <header class="game-header">
+      <div class="header-decoration">
+        <span class="disc-icon red">🔴</span>
+        <span class="disc-icon yellow">🟡</span>
+      </div>
+
+      <h1 class="title">Four Connect</h1>
+      <p class="subtitle">Classic strategy game • Connect four discs to win</p>
+
+      <!-- Settings Summary + Quick open -->
+      <div class="settings-summary" aria-live="polite">
+        <button id="openSettings" class="chip action" type="button">⚙️ Settings</button>
+        <span class="chip"><strong>Mode:</strong> <span id="summary-mode">Two Players</span></span>
+        <span class="chip"><strong>Board:</strong> <span id="summary-board">7×6</span></span>
+        <span id="chip-diff" class="chip"><strong>AI:</strong> <span id="summary-difficulty">Medium</span></span>
+        <span id="chip-play" class="chip"><strong>You:</strong> <span id="summary-playas">🔴 Red</span></span>
+      </div>
+
+      <!-- Controls Toolbar -->
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <button id="reset" class="btn primary" type="button">
+            <span class="btn-icon">🔁</span><span>Restart</span>
+          </button>
+          <button id="undo" class="btn secondary" type="button" aria-label="Undo last move">
+            <span class="btn-icon">↩️</span><span>Undo</span>
+          </button>
+          <button id="redo" class="btn secondary" type="button" aria-label="Redo last undone move">
+            <span class="btn-icon">↪️</span><span>Redo</span>
+          </button>
+        </div>
+        <div class="toolbar-right controls-hint">
+          <span class="hint-icon">⌨️</span>
+          <span>Mouse or ←/→ to move • Space/Enter to drop • 1–9 quick drop</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Status -->
+    <div id="status" class="status" role="status" aria-live="polite" aria-atomic="true">
+      Player 1's Turn (🔴 Red)
+    </div>
+    <div id="thinking" class="thinking" aria-live="polite" aria-atomic="true" hidden>🤖 AI thinking…</div>
+
+    <!-- Game Board -->
+    <div
+      id="board"
+      class="board"
+      role="grid"
+      aria-label="Connect Four board, 7 columns by 6 rows. Click or use arrow keys to choose a column."
+      aria-rowcount="6"
+      aria-colcount="7"
+      aria-describedby="sr-instructions"
+      tabindex="0"
+    ></div>
+
+    <p id="sr-instructions" class="visually-hidden">
+      Use left and right arrow keys to choose a column, Enter to drop. You can also press a number key from 1 to 9 to drop immediately. Use Control or Command plus Z to undo, Control plus Y or Control plus Shift plus Z to redo.
+    </p>
+
+    <!-- Scoreboard -->
+    <section class="scoreboard card" aria-live="polite" aria-atomic="true">
+      <div class="scoreboard-header">
+        <h2>Match Score</h2>
+      </div>
+      <div class="scoreline">
+        <div class="score-item">
+          <span id="score-red-name" class="player-name">Red</span>
+          <span id="score-red" class="badge red-badge">0</span>
+        </div>
+        <div class="score-item draws">
+          <span class="player-name">Draws</span>
+          <span id="score-draws" class="badge draw-badge">0</span>
+        </div>
+        <div class="score-item">
+          <span id="score-yellow-name" class="player-name">Yellow</span>
+          <span id="score-yellow" class="badge yellow-badge">0</span>
+        </div>
+      </div>
+      <div class="score-actions">
+        <button id="scoreReset" class="btn tertiary small" type="button">
+          <span class="btn-icon">🔄</span>
+          <span>Reset Score</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Settings Panel -->
+    <section class="panel card">
+      <details id="settings-panel">
+        <summary>
+          <span class="summary-icon">⚙️</span>
+          <span>Game Settings</span>
+        </summary>
+        <div class="settings-content">
+          <div class="settings-grid">
+            <div class="field">
+              <label for="mode">
+                <span class="label-icon">🎮</span>
+                <span>Game Mode</span>
+              </label>
+              <select id="mode">
+                <option value="pvp">Two Players</option>
+                <option value="pva">Solo vs AI</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="difficulty">
+                <span class="label-icon">🎯</span>
+                <span>AI Difficulty</span>
+              </label>
+              <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="playAs">
+                <span class="label-icon">🎭</span>
+                <span>Play As</span>
+              </label>
+              <select id="playAs">
+                <option value="red">🔴 Red (first)</option>
+                <option value="yellow">🟡 Yellow (second)</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="nameRed">
+                <span class="label-icon">👤</span>
+                <span>Red Player Name</span>
+              </label>
+              <input id="nameRed" type="text" placeholder="Player 1" maxlength="24">
+            </div>
+
+            <div class="field">
+              <label for="nameYellow">
+                <span class="label-icon">👤</span>
+                <span>Yellow Player Name</span>
+              </label>
+              <input id="nameYellow" type="text" placeholder="Player 2" maxlength="24">
+            </div>
+
+            <div class="field">
+              <label>
+                <span class="label-icon">📐</span>
+                <span>Board Size</span>
+              </label>
+              <div class="size-row">
+                <input id="colsInput" type="number" min="4" max="12" value="7" aria-label="Columns">
+                <span class="size-separator">×</span>
+                <input id="rowsInput" type="number" min="4" max="12" value="6" aria-label="Rows">
+              </div>
+              <div class="size-presets">
+                <button class="chip" data-preset="7x6" type="button">7×6 Classic</button>
+                <button class="chip" data-preset="7x7" type="button">7×7</button>
+                <button class="chip" data-preset="8x8" type="button">8×8</button>
+              </div>
+            </div>
+
+            <div class="field full">
+              <button id="apply" class="btn primary full-width" type="button">
+                <span class="btn-icon">✓</span>
+                <span>Apply & New Game</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <!-- Page Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="brand-mini">🔴🟡 Four Connect</span>
+        <span class="sep"></span>
+ 
+      </div>
+      <div class="footer-right">
+        <span>Made with Saurav ❤️ · Theme: <span id="footer-theme-label">Dark</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script/script.js" defer></script>
+</body>
+</html>
