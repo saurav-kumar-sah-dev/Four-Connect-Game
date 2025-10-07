@@ -21,7 +21,7 @@ No build tools. No dependencies. Just pure HTML + CSS + JavaScript.
 ### ⚙️ Game Settings Panel
 ![Settings Panel](https://drive.google.com/uc?export=view&id=1LREgXmwias9qVhCb556wOqJYcP8cV30N)
 
-### ☀️ Game Board - Light Theme
+### ☀️ Game View
 ![Game Play Board](https://drive.google.com/uc?export=view&id=1HS63AU-WjPetp72aNTpmJMLcawf05w7M)
 
 ### 📱 Mobile Responsive View
