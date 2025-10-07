@@ -9,7 +9,7 @@ No build tools. No dependencies. Just pure HTML + CSS + JavaScript.
 ## 🌐 Connect & Try  
 
 🔗 [**View Deployed App**](https://fourconnectgame.netlify.app/) ✅ *(Live Now)*  
-🔗 [**Kinkedin Profile**](https://www.linkedin.com/in/sauravkumarsah-dev/) ✅ *(Linkedin)*  
+🔗 [**Linkedin Profile**](https://www.linkedin.com/in/sauravkumarsah-dev/) ✅ *(Linkedin)*  
 
 ---
 
