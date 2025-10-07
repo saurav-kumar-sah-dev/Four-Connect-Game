@@ -30,6 +30,8 @@ No build tools. No dependencies. Just pure HTML + CSS + JavaScript.
 
 ---
 
+## Features
+
 - Game modes
   - Two Players (local)
   - Solo vs AI (Easy, Medium) with choice to play as Red or Yellow
