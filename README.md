@@ -1,12 +1,34 @@
 # Four Connect 🔴🟡
 
-A polished, accessible, and responsive Connect Four game for the browser. Play locally with a friend or against a simple AI. Smooth animations, keyboard controls, sticky header with theme toggle, and a persistent scoreboard.
+A polished, accessible, and responsive Connect Four game for the browser. Play locally with a friend or against a simple AI. Features smooth animations, keyboard controls, theme switching, and a persistent scoreboard.
 
-No build tools. No dependencies. Just HTML + CSS + JavaScript.
+No build tools. No dependencies. Just pure HTML + CSS + JavaScript.
 
 ---
 
-## Features
+## 🌐 Connect & Try  
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=vercel)](https://fourconnectgame.netlify.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Saurav_Kumar_Sah-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sauravkumarsah-dev/)  
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/saurav-kumar-sah-dev/Four-Connect-Game)
+
+---
+
+## 📸 Screenshots  
+
+### 🎮 Game Board - Dark Theme
+![Game Board Dark](https://drive.google.com/file/d/1FhEjcjcXm3OhxMBeKGe1R3Jl-3vw6Cr6/view?usp=sharing)
+
+### ⚙️ Game Settings Panel
+![Settings Panel](https://drive.google.com/file/d/1LREgXmwias9qVhCb556wOqJYcP8cV30N/view?usp=sharing)
+
+### ☀️ Game Board - Light Theme
+![Game Play Board ](https://drive.google.com/file/d/1HS63AU-WjPetp72aNTpmJMLcawf05w7M/view?usp=sharing)
+
+### 📱 Mobile Responsive View
+![Game Board Light](https://drive.google.com/file/d/1hmQNhpyK-INXlwzVLPHlQEvNATIdMxoW/view?usp=sharing)
+
+---
 
 - Game modes
   - Two Players (local)
