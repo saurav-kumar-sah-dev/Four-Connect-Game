@@ -8,9 +8,8 @@ No build tools. No dependencies. Just pure HTML + CSS + JavaScript.
 
 ## 🌐 Connect & Try  
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=vercel)](https://fourconnectgame.netlify.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Saurav_Kumar_Sah-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sauravkumarsah-dev/)  
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/saurav-kumar-sah-dev/Four-Connect-Game)
+🔗 [**View Deployed App**](https://fourconnectgame.netlify.app/) ✅ *(Live Now)*  
+🔗 [**Kinkedin Profile**](https://www.linkedin.com/in/sauravkumarsah-dev/) ✅ *(Linkedin)*  
 
 ---
 
