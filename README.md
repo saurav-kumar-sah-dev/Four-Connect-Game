@@ -9,7 +9,8 @@ No build tools. No dependencies. Just pure HTML + CSS + JavaScript.
 ## 🌐 Connect & Try  
 
 🔗 [**View Deployed App**](https://fourconnectgame.netlify.app/) ✅ *(Live Now)*  
-🔗 [**Linkedin Post**]([https://www.linkedin.com/in/sauravkumarsah-dev/](https://www.linkedin.com/posts/sauravkumarsah-dev_four-connect-is-a-polished-fully-accessible-activity-7381303643796402177-BI5P?utm_source=share&utm_medium=member_desktop&rcm=ACoAADzT84EBx_LhVv32fYVUqjOTRutIkbU6iZk)) ✅ *(Linkedin Post)*  
+🔗 [**LinkedIn Post**](https://www.linkedin.com/posts/sauravkumarsah-dev_four-connect-is-a-polished-fully-accessible-activity-7381303643796402177-BI5P?utm_source=share&utm_medium=member_desktop&rcm=ACoAADzT84EBx_LhVv32fYVUqjOTRutIkbU6iZk) ✅ *(LinkedIn Post)*
+
 
 ---
 
